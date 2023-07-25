@@ -5,7 +5,32 @@ Installation:
 
 Usage:
 `path-easing basic_file.nc eased_file_out.nc`
-`path-easing basic_file.nc eased_file_out.nc --params-filename params.json` for basic usage with a config file (see the example file in repo)
+
+`path-easing basic_file.nc eased_file_out.nc --params-filename params.json` for basic usage with a parameters file like so:
+
+```{
+    "start_shift": 1,
+    "end_shift": 0,
+    "start_extend": 5,
+    "end_extend": 5,
+    "start_extend_height": 4,
+    "end_extend_height": 4,
+    "start_pushthrough_inset": 2,
+    "end_pushthrough_inset": 7,
+    "start_pushthrough_z": -3,
+    "end_pushthrough_z": -2
+}
+```
+
+`path-easing basic_file.nc eased_file_out.nc --start-shift 1` to extend the beginning of all paths by 1mm
+
+`path-easing basic_file.nc eased_file_out.nc --start-extend 5 --start-extend-height 3` to add a lead in to every stroke
+
+`path-easing basic_file.nc eased_file_out.nc --end-extend 5 --end-extend-height 3` to add a lead out to every stroke
+
+`path-easing basic_file.nc eased_file_out.nc --start-pushthrough-inset 3 --start-pushthrough-z -1` to continue a lead in ending at Z=-1, for the first 3mm of the stroke
+
+
 
 Keep in mind that it only works with files that have the following structure:
 It is important to keep XY moves and Z moves on seperate lines (this is sometimes called 2.5D movement)
