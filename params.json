@@ -1,0 +1,12 @@
+{
+    "start_shift": 1,
+    "end_shift": 0,
+    "start_extend": 5,
+    "end_extend": 5,
+    "start_extend_height": 4,
+    "end_extend_height": 4,
+    "start_pushthrough_inset": 2,
+    "end_pushthrough_inset": 7,
+    "start_pushthrough_z": -3,
+    "end_pushthrough_z": -2
+}
