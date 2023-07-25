@@ -10,6 +10,8 @@ from typing_extensions import Annotated
 from typing import Optional
 from pathlib import Path
 
+app = typer.Typer()
+
 params_default = {
     'start_shift': 1,
     'end_shift': 0,
@@ -109,7 +111,7 @@ def parse_and_manipulate_file(filename, out_filename, params):
     print(f"[bold green]Wrote the output to: [/bold green] {out_filename}")
 
 
-# def main(filename: str, params_filename: str):
+@app.command()
 def main(
         gcode_filename: Annotated[Path, typer.Argument(help="The gcode file to parse")],
         gcode_filename_out: Annotated[Path, typer.Argument(help="The gcode file to write to")],
@@ -179,5 +181,3 @@ def main(
     parse_and_manipulate_file(gcode_filename, gcode_filename_out,  params)
 
 
-if __name__ == "__main__":
-    typer.run(main)

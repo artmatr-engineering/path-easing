@@ -11,4 +11,4 @@ requires-python = ">=3.6"
 dependencies = ["typer", "numpy", "rich", "gcodeparser"]
 
 [project.scripts]
-path-easing = "path_easing.path_easing:main"
+path-easing = "path_easing.main:app"
