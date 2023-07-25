@@ -6,8 +6,8 @@ Installation:
 Usage:
 `path-easing basic_file.nc eased_file_out.nc`
 
-`path-easing basic_file.nc eased_file_out.nc --params-filename params.json` for basic usage with a parameters file like so:
 
+`path-easing basic_file.nc eased_file_out.nc --params-filename params.json` for basic usage with a parameters file like so:
 ```{
     "start_shift": 1,
     "end_shift": 0,
