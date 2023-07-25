@@ -1,5 +1,8 @@
 This package allows you to ease the motions of a gcode file.
 
+Installation:
+`pip install git+https://github.com/artmatr-engineering/path-easing.git`
+
 Keep in mind that it only works with files that have the following structure:
 It is important to keep XY moves and Z moves on seperate lines (this is sometimes called 2.5D movement)
 
