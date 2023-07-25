@@ -19,8 +19,8 @@ params_default = {
     'end_extend': 0,
     'start_extend_height': 0,
     'end_extend_height': 0,
-    'start_pushthrough_inset': 0,
-    'end_pushthrough_inset': 0,
+    'start_pushthrough_inset': 1,
+    'end_pushthrough_inset': 1,
     'start_pushthrough_z': 0,
     'end_pushthrough_z': 0
 }
