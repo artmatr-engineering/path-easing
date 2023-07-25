@@ -1,6 +1,8 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 
+
+
 [project]
 name = "path-easing"
 version = "0.1.0"
@@ -8,16 +10,7 @@ description = "A utility to parse gcodes and apply various modifications to the 
 long_description = "file: README.md"
 author = "Tristan Ryer-Parke"
 python_requires = ">=3.6"
+dependencies = ["typer", "numpy", "rich", "gcodeparser"]
 
 [project.scripts]
 path-easing = "path_easing.path_easing:main"
-
-[project.dependencies]
-numpy = "*"
-typer = "*"
-rich = "*"
-gcodeparser = "*"
-
-[tool.setuptools]
-name = "path-easing"
-version = "0.1.0"
