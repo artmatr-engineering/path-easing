@@ -13,16 +13,16 @@ from pathlib import Path
 app = typer.Typer()
 
 params_default = {
-    'start_shift': 1,
+    'start_shift': 0,
     'end_shift': 0,
-    'start_extend': 5,
-    'end_extend': 5,
-    'start_extend_height': 4,
-    'end_extend_height': 4,
-    'start_pushthrough_inset': 2,
-    'end_pushthrough_inset': 2,
-    'start_pushthrough_z': -3,
-    'end_pushthrough_z': -2
+    'start_extend': 0,
+    'end_extend': 0,
+    'start_extend_height': 0,
+    'end_extend_height': 0,
+    'start_pushthrough_inset': 0,
+    'end_pushthrough_inset': 0,
+    'start_pushthrough_z': 0,
+    'end_pushthrough_z': 0
 }
 
 def parse_and_manipulate_file(filename, out_filename, params):
