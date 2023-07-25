@@ -1,7 +1,7 @@
 import typer
 import numpy as np
 from gcodeparser import GcodeParser as gp
-from manipulate_polyline import manipulate_polyline as mp
+from .manipulate_polyline import manipulate_polyline as mp
 import sys
 import json
 from collections import Counter
